@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>Портал Новгородского государственного университета</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Верхняя панель - высота 60px с отступами 160px -->
+    <div class="top-panel">
+        <div class="date-info">
+            <a href="#">Сегодня 06 октября 2025 года / 10 °C, 761 мм.</a>
+        </div>
+        <div class="top-nav">
+            <ul class="top-nav-links">
+                <li><a href="#">Студентам</a></li>
+                <li><a href="#">Преподавателям и сотрудникам</a></li>
+                <li><a href="#">Выпускникам и партнёрам</a></li>
+            </ul>
+        </div>
+        <div class="language-links">
+            <a href="#">English</a>
+            <a href="#">Deutsch</a>
+        </div>
+    </div>
+
+    <!-- Шапка университета - высота 262px с отступами 160px -->
+    <header class="university-header">
+        <div class="university-logo">
+            <img src="assets/images/logo.png" alt="Новгородский государственный университет имени Ярослава Мудрого">
+        </div>
+        <div class="header-right">
+            <!-- Профиль пользователя -->
+            <div class="user-panel">
+                <div class="user-avatar">ОИ</div>
+                <div class="user-info">
+                    <div class="user-greeting">Добрый день, Олег Иванов</div>
+                    <div class="user-links">
+                        <a href="#">Мои файлы</a> / 
+                        <a href="#">почта</a> / 
+                        <a href="#">выход</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Поиск под профилем -->
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" class="search-input" placeholder="Найти">
+                    <button type="submit" class="search-button">Найти
+
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главное меню -->
+    <nav class="main-menu">
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li><a href="#">Официально</a></li>
+                <li><a href="#">Структура</a></li>
+                <li><a href="#">Учеба</a></li>
+                <li><a href="#">Наука</a></li>
+                <li><a href="#">Международная деятельность</a></li>
+                <li><a href="#">Новости подразделений</a></li>
+                <li><a href="#">Новый сайт</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="services-grid">
+            <a href="#" class="service-button">
+                <div class="button-content">
+                    <span class="button-text">Абитуриентам</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="button-content">
+                    <span class="button-text">Режим и <br> безопасность</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="service-image" style="background-image:url('assets/images/service1.png')"></div>
+                <div class="button-content">
+                    <span class="button-text">Расписание</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="service-image" style="background-image:url('assets/images/service2.png')"></div>
+                <div class="button-content">
+                    <span class="button-text">Оплата <br> обучения</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="button-content">
+                    <span class="button-text">International <br> Students</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="service-image" style="background-image:url('assets/images/service3.png')"></div>
+                <div class="button-content">
+                    <span class="button-text">Проектная <br> деятельность</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="service-image" style="background-image:url('assets/images/service4.png')"></div>
+                <div class="button-content">
+                    <span class="button-text">Телефонный <br> справочник</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="service-image" style="background-image:url('assets/images/service5.png')"></div>
+                <div class="button-content">
+                    <span class="button-text">Газон.Медиа</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+            <a href="#" class="service-button">
+                <div class="button-content">
+                    <span class="button-text">Дистанционное <br> обучение</span>
+                    <div class="button-line"></div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Разделитель между сервисами и информационными блоками -->
+        <div class="content-divider"></div>
+
+        <!-- Дни рождения и информационные блоки -->
+        <div class="info-blocks">
+            <div class="birthdays">
+                <div class="info-title">Дни рождения</div>
+                <div class="birthdays-content">
+                    <div class="birthdays-links">
+                        <a href="#">сегодня</a>
+                        <a href="#">завтра</a>
+                        <a href="#">послезавтра</a>
+                    </div>
+                    <div style="font-weight:bold;margin-bottom:10px;">Преподавателей и сотрудников</div>
+                    <ul class="birthdays-list">
+                        <li><a href="#">Лемешева Людмила Михайловна</a></li>
+                        <li><a href="#">Салоников Николай Вячеславович</a></li>
+                    </ul>
+                    <div style="margin-top:20px;">
+                        а также <a href="#" style="font-weight:bold;">студентов</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-title">Проекты</div>
+                <div class="info-content">
+                    <ul>
+                        <li><a href="#">Система учета публикаций ПУМА</a></li>
+                        <li><a href="#">Бесплатные курсы в рамках нацпроектов</a></li>
+                        <li><a href="#">International Students</a></li>
+                        <li><a href="#">Проектная деятельность</a></li>
+                        <li><a href="#">Анкета о качестве образовательных услуг</a></li>
+                        <li><a href="#">Документальные древности стран Балтии и русского Северо-Запада</a></li>
+                        <li><a href="#">Корпоративная культура предприятия как фактор повышения производительности труда</a></li>
+                        <li><a href="#">EP General Medicine</a></li>
+                        <li><a href="#">Фонд целевого капитала Новгородского государственного университета</a></li>
+                        <li><a href="#">Федеральный проект "Профессионалы"</a></li>
+                        <li><a href="#">Новгородская сетевая академия Cisco</a></li>
+                        <li><a href="#">Содействие трудоустройству</a></li>
+                        <li><a href="#">Древности Новгородской земли: электронная база данных археологических находок</a></li>
+                        <li><a href="#">Архив проектов</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-title">Объявления</div>
+                <div class="info-content">
+                    <div style="margin-bottom:15px;">
+                        <a href="#" style="font-weight:bold;">Уважаемые студенты и сотрудники!</a>
+                        <p style="font-size:11px;margin:5px 0;">Очередной заезд в Санаторий-профилакторий НовГУ начинается с 14 октября 2025г. Оформление...</p>
+                    </div>
+                    <div>
+                        <a href="#" style="font-weight:bold;">Подготовительные курсы</a>
+                        <p style="font-size:11px;margin:5px 0;">Бесплатная подготовка к поступлению в университет В НовГУ стартовал приём заявок на бесплатное...</p>
+                    </div>
+                    <div style="margin-top:15px;">
+                        <a href="#">архив</a>, <a href="#">RSS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Разделитель перед футером -->
+    <div class="footer-divider"></div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p><strong>© 1994-2025, <a href="https://portal.novsu.ru/dept/29721833/">ЦНИТ НовГУ</a></strong></p>
+                <p>&nbsp;</p>
+                <p><a href="#">Портал Новгородского государственного университета им. Ярослава Мудрого</a></p>
+                <ul>
+                    <p>&nbsp;</p>
+                    <li><a href="#">Файлы</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Официальная информация</h2>
+                <ul>
+                    <li><a href="#">Сведения об образовательной организации</a></li>
+                    <li><a href="#">Структура</a></li>
+                    <li><a href="#">Телефоны</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Часто задаваемые вопросы</a></li>
+                    <li><a href="#">Сведения о доходах</a></li>
+                    <li><a href="#">Противодействие коррупции</a></li>
+                    <li><a href="#">Противодействие терроризму и экстремизму</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-section">
+                <h2>Контакты</h2>
+                <p>
+                    Великий Новгород,<br>
+                    ул. Большая Санкт-Петербургская, д. 41<br>
+                    <a href="mailto:novsu@novsu.ru">novsu@novsu.ru</a><br>
+                    канцелярия: <a href="tel:+78162974558">+7 (8162) 97-45-58</a><br>
+                    приёмная комиссия: <a href="tel:+78162332044">+7 (8162) 33-20-44</a><br>
+                    <a href="mailto:@pk@novsu.ru">pk@novsu.ru</a><br>
+                    отдел по работе с иностранными студентами: <br>
+                    <a href="mailto:fro@novsu.ru">fro@novsu.ru</a> <br>
+                    cлужба новостей: <a href="mailto:news@novsu.ru">news@novsu.ru</a> <br>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h2>НовГУ в социальных сетях</h2>
+                <div class="social-links">
+                    <a href="#" title="VK"></a>
+                    <a href="#" title="Telegram"></a>
+                    <a href="#" title="Яндекс.Дзен"></a>
+                    <a href="#" title="Rutube"></a>
+                    <a href="#" title="Одноклассники"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="chat-container"></div>
+
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

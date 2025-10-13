@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Верхняя панель - высота 60px с отступами 160px */
+.top-panel {
+    background-color: #002FA7;
+    color: white;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    height: 45px;
+    border-bottom: 1px solid #003d82;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-panel a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.top-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.top-nav-links a:hover {
+    text-decoration: underline;
+}
+
+.language-links {
+    display: flex;
+    gap: 15px;
+}
+
+.language-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.language-links a:hover {
+    text-decoration: underline;
+}
+
+/* Шапка университета - высота 200px с отступами 160px */
+.university-header {
+    background-color: #fff;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.university-logo {
+    width: 400px;
+    height: 160px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.university-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+    margin: 0;
+}
+
+/* Панель пользователя - белый фон */
+.user-panel {
+    background-color: #fff;
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 320px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #0056b3;
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user-greeting {
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+}
+
+.user-links {
+    display: flex;
+    gap: 8px;
+}
+
+.user-links a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Поиск */
+.search-container {
+    width: 320px;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+}
+
+.search-button {
+    background: #0056b3;
+    border: 1px solid #0056b3;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Синий разделитель под шапкой */
+.blue-divider {
+    height: 2px;
+    background-color: #d1d1d1;
+    margin: 0 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Главное меню */
+.main-menu {
+    margin-top: 10px;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+    border-top: 2px solid #D1D1D1;
+    border-bottom: 4px solid #989898;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0px 0;
+    white-space: nowrap;
+}
+
+.menu-list li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.menu-list a {
+    color: #002FA7;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.menu-list li:last-child {
+    margin-left: auto;
+}
+
+.menu-list li:last-child a {
+    color: #ff8c00;
+    text-decoration: underline;
+}
+
+.menu-list > li {
+    position: relative;
+}
+
+.menu-list > li > a {
+    display: block;
+    padding: 9px 9px;
+    border: 1px solid transparent;
+}
+
+.menu-list > li > a:hover {
+    background-color: #f8f9fa;
+}
+
+/* Разделитель между меню и контентом */
+.section-divider {
+    height: 4px;
+    background-color: #989898;
+    margin: 0 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Основной контент - отступы 160px */
+
+.main-content {
+    padding: 44px 0px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: start;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-button {
+    display: block;
+    width: 370px;
+    height: 210px;
+    padding-left: 30px;    
+    padding-bottom: 56px;  
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;             
+    font-size: 22px;              
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.2;             
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center; 
+}
+
+
+.service-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover .service-image {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.button-content {
+    position: absolute;
+    bottom: 40px;  
+    left: 30px;   
+    text-align: left;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.button-text {
+    display: block;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.button-line {
+    width: 60px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.service-button:hover .button-content {
+    transform: translate(10px, -10px);
+}
+
+.service-button:hover .button-text {
+    transform: scale(1.05);
+}
+
+.service-button:hover .button-line {
+    width: 80px;
+}
+
+/* Разные цвета для всех сервисных кнопок с изображениями */
+.service-button:nth-child(1) { 
+    background: linear-gradient(135deg, #1b3a8a, #2c5db3);
+}
+
+.service-button:nth-child(2) { 
+    background: linear-gradient(135deg, #8c8c8c, #b1b1b1);
+}
+
+.service-button:nth-child(3) { 
+    background: linear-gradient(135deg, #1b3a8a, #2c5db3);
+}
+
+.service-button:nth-child(4) { 
+    background: linear-gradient(135deg, #b1b1b1, #8c8c8c);
+}
+
+.service-button:nth-child(5) { 
+    background: linear-gradient(135deg, #1b3a8a, #2c5db3);
+}
+
+.service-button:nth-child(6) { 
+    background: linear-gradient(135deg, #b1b1b1, #8c8c8c);
+}
+
+.service-button:nth-child(7) { 
+    background: linear-gradient(135deg, #1b3a8a, #2c5db3);
+}
+
+.service-button:nth-child(8) { 
+    background: linear-gradient(135deg, #58cc69, #a2db95);
+}
+
+.service-button:nth-child(9) { 
+    background: linear-gradient(135deg, #1b3a8a, #2c5db3);
+}
+
+.birthdays {
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.birthdays-title {
+    padding: 15px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.birthdays-content {
+    padding: 15px;
+}
+
+.birthdays-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.birthdays-links a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.birthdays-list {
+    list-style: none;
+    line-height: 1.6;
+    
+}
+
+.birthdays-list li {
+    margin-bottom: 8px;
+}
+
+.birthdays-list a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Проекты и объявления - белый фон */
+.info-block {
+    background: #fff;
+}
+
+.info-title {
+    padding: 15px;
+    font-weight: demibold;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 24px;
+}
+
+.info-content {
+    padding: 15px;
+}
+
+.info-content ul {
+    list-style: none;
+}
+
+.info-content li {
+    margin-bottom: 10px;
+    padding-left: 0px;
+    position: relative;
+}
+
+.info-content a {
+    color: #002FA7;
+    text-decoration: underline;
+}
+
+.info-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Разделитель перед футером */
+.footer-divider {
+    height: 2px;
+    background-color: #959595;
+    margin: 0 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Футер*/
+.footer {
+    background-color: #fff;
+    padding: 24px 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-section h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #0056b3;
+    border-radius: 3px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .service-button {
+        width: 100%;
+        max-width: 403px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-grid,
+    .info-blocks,
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .university-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .header-right {
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .university-logo {
+        margin-bottom: 0;
+    }
+    
+    .blue-divider,
+    .section-divider,
+    .footer-divider {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid,
+    .info-blocks,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .top-panel,
+    .university-header,
+    .main-content,
+    .footer,
+    .menu-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .blue-divider,
+    .section-divider,
+    .footer-divider {
+        margin: 0 20px;
+    }
+    
+    .service-button {
+        height: 180px;
+    }
+    
+    .button-content {
+        bottom: 30px;
+        left: 20px;
+    }
+    
+    .button-text {
+        font-size: 18px;
+    }
+}
