@@ -1,4 +1,4 @@
-// Основные скрипты для портала
+// Файл /js/main.js
 document.addEventListener('DOMContentLoaded', function() {
     // Обработка поиска
     document.querySelector('.search-form').addEventListener('submit', function(e) {

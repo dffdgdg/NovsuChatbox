@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <title>Портал Новгородского государственного университета</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chat-styles.css">
 </head>
 <body>
     <!-- Верхняя панель - высота 60px с отступами 160px -->
@@ -50,9 +50,7 @@
             <div class="search-container">
                 <form class="search-form">
                     <input type="text" class="search-input" placeholder="Найти">
-                    <button type="submit" class="search-button">Найти
-
-                    </button>
+                    <button type="submit" class="search-button">Найти</button>
                 </form>
             </div>
         </div>
@@ -231,8 +229,6 @@
                 </ul>
             </div>
 
-
-
             <div class="footer-section">
                 <h2>Контакты</h2>
                 <p>
@@ -261,9 +257,15 @@
         </div>
     </footer>
 
+    <!-- Контейнер для чата -->
     <div id="chat-container"></div>
 
-    <script src="script.js"></script>
-    <script src="chat.js"></script>
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+    
+    <!-- Скрипты чата -->
+    <script src="js/chat/chat-storage.js"></script>
+    <script src="js/chat/chat-ai.js"></script>
+    <script src="js/chat/chat-core.js"></script>
 </body>
 </html>
